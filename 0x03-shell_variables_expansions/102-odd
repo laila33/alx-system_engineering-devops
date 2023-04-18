@@ -1,5 +1,2 @@
-#!/bin/bash
-while read line; do
-    echo $line
-    read line # Skip the next line
-done < $1
+#!/bin/bash 
+paste -d, - - | cut -d, -f1
